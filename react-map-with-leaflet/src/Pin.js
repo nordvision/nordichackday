@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Marker } from 'react-leaflet';
+import { Marker, Popup } from 'react-leaflet';
 import './map-widget.css';
 
 class Pin extends React.Component {
@@ -7,11 +7,17 @@ class Pin extends React.Component {
     return (
       <Marker
         className="circle"
-        position={this.props.center}
+        position={this.props.coordinates}
         fillOpacity={this.props.opacity}
         weight={0}
         {...this.props}
-      />
+        >
+        <Popup text="hej">
+            <div>
+              <p>Read the article: <a href={"" + this.props.url}>{this.props.name}</a></p>
+            </div>
+        </Popup>
+        </Marker>
     );
   }
 }

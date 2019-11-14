@@ -82,7 +82,9 @@ const Pins = (props) => {
     .map((p, i) => (
       <Pin
         key={`${p.toString()}-${i}`}
-        center={p}
+        coordinates={p.coordinates}
+        url={p.url}
+        name={p.name}
         {...markerStyle}
       />
     ));

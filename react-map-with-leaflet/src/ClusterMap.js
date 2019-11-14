@@ -8,7 +8,12 @@ class MapWidget extends Component {
     super(props)
     let pins = []
     for (let i = 0; i < 5000; i++) {
-      pins.push([Math.floor(Math.random() * 50), Math.floor(Math.random() * 50)]);
+      pins.push({
+        coordinates: [Math.floor(Math.random() * 50),
+                      Math.floor(Math.random() * 50)],
+        url: "https://google.com",
+        name: "gooogle"
+      });
     }
     this.state = {
       pins
