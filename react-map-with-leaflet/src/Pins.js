@@ -65,15 +65,10 @@ const Pins = (props) => {
 
     return L.divIcon({
       html:
-        `<div style="${circleStyle1}" class="${options.circle1}">
-					<div style="${circleStyle2}" class="${options.circle2}">
-						<div style="${circleStyle3}" class="${options.circle3}">
-							<div style="${circleStyle4}" class="${options.circle4}">
+        `	<div style="${circleStyle4}" class="${options.circle4}">
 								<span class="${options.label}">${count}</span>
 							</div>
-						</div>
-					</div>
-				</div>`,
+						`,
       className: `${options.cluster}`,
     });
   };
