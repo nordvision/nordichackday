@@ -1,26 +1,11 @@
-import Leaflet from 'leaflet'
-import React, { StrictMode } from 'react'
-import CustomComponentExample from './Components/custom-component';
+import React from 'react';
+import  ReactDOM from 'react-dom'
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+//import logo from './logo.svg';
+//import './../../../App
+//const { Map: LeafletMap, TileLayer, Marker, Popup } = ReactLeaflet
 
-Leaflet.Icon.Default.imagePath =
-  '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/'
-
-
-
-  const App = () => (
-    <StrictMode>
-        <CustomComponentExample/>
-        
-        </StrictMode>
-
-)
-
-export default App;
-
-
-//const { Map: LeafletMap, TileLayer, Marker, Popup } = ReactLeaflet;
-
-/*class App extends React.Component {
+class SimpleExample extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -49,4 +34,6 @@ export default App;
 }
 
 
-ReactDOM.render(<App />, document.getElementById('container'))*/
+//ReactDOM.render(<SimpleExample />, document.getElementById('container'))
+
+export default SimpleExample;
